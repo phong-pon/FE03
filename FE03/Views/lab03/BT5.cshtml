@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "BT5";
+}
+
+
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Progress</title>
+
+    <style>
+        .progress {
+            width: 470px; 
+            height: 22px;
+            background-color: #ddd;
+            border-radius: 15px;
+            margin: 25px auto;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 5px;
+            box-sizing: border-box;
+        }
+
+        #bar1 {
+            background-color: #7223a5;
+        }
+
+        #bar2 {
+            background-color: #087c70;
+        }
+
+        #bar3 {
+            background-color: #f36b16;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress">
+        <div id="bar1" class="progress-bar"></div>
+    </div>
+
+    <div class="progress">
+        <div id="bar2" class="progress-bar"></div>
+    </div>
+
+    <div class="progress">
+        <div id="bar3" class="progress-bar"></div>
+    </div>
+
+    <script src="~/Scripts/BT5/BT5.js"></script>
+
+</body>
+</html>
+

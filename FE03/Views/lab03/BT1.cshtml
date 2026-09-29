@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "BT1";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu tham gia CLB Tin học</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+            h2 span {
+                color: #00aaff;
+            }
+
+        table {
+            width: 500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            font-size: 13px;
+        }
+
+            td:first-child {
+                width: 140px;
+            }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 120px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: red;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        #message {
+            color: blue;
+            font-size: 12px;
+        }
+
+        button {
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PHIẾU THAM GIA CLB TIN HỌC <span>LUBU</span></h2>
+
+    <form id="formDangKy">
+        <table>
+            <tr>
+                <td>Mã sinh viên :</td>
+                <td>
+                    <input type="text" id="maSV" placeholder="Nhập Mã SV">
+                </td>
+                <td id="errMaSV" class="error"></td>
+            </tr>
+
+            <tr>
+                <td>Họ và tên :</td>
+                <td>
+                    <input type="text" id="hoTen" placeholder="Nhập Họ và tên">
+                </td>
+                <td id="errHoTen" class="error"></td>
+            </tr>
+
+            <tr>
+                <td>Tuổi :</td>
+                <td>
+                    <input type="number" id="tuoi" placeholder="Nhập tuổi > 18">
+                </td>
+                <td id="errTuoi" class="error"></td>
+            </tr>
+
+            <tr>
+                <td>Ngoại ngữ :</td>
+                <td colspan="2">
+                    <label>
+                        <input type="checkbox" name="ngoaiNgu" value="Anh"> Anh
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="ngoaiNgu" value="Pháp"> Pháp
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="ngoaiNgu" value="Nhật"> Nhật
+                    </label>
+
+                    <span id="errNgoaiNgu" class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Chuyên ngành :</td>
+                <td colspan="2">
+                    <select id="chuyenNganh">
+                        <option value="">-- Chọn --</option>
+                        <option value="Hệ thống">Hệ thống</option>
+                        <option value="Phần mềm">Phần mềm</option>
+                        <option value="Mạng máy tính">Mạng máy tính</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sở trường :</td>
+                <td id="soTruong" colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <button type="submit">Đăng ký</button>
+                    <span id="message"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="~/Scripts/BT1/BT1.js"></script>
+</body>
+</html>
+

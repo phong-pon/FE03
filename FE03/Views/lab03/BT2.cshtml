@@ -1,0 +1,176 @@
+﻿
+@{
+    ViewBag.Title = "BT2";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Thông tin giao hàng</title>
+
+    <style>
+        .form-container {
+            width: 500px;
+            margin: 50px ;
+            border: 1px solid #333;
+            padding: 15px;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .title {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .col {
+            width: 50%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 25px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: red;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+
+        .delivery {
+            margin-top: 8px;
+            padding-top: 5px;
+            border-top: 1px solid #ddd;
+        }
+
+        .buttons {
+            margin-top: 8px;
+        }
+
+        button {
+            border: none;
+            color: white;
+            padding: 5px 12px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #vanPhong {
+            background-color: #337ab7;
+        }
+
+        #nhaRieng {
+            background-color: #5cb85c;
+        }
+
+        #luu {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <div class="title">Thông tin giao hàng</div>
+
+        <!-- Tên -->
+        <div class="row">
+            <div class="col">
+                <label>Tên</label>
+                <input type="text" id="txtTen" />
+                <div id="errTen" class="error"></div>
+            </div>
+
+            <!-- Địa chỉ -->
+            <div class="col">
+                <label>Địa chỉ nhận hàng</label>
+                <input type="text" id="txtDiaChi" />
+                <div id="errDiaChi" class="error"></div>
+            </div>
+        </div>
+
+        <!-- Số điện thoại -->
+        <div class="row">
+            <div class="col">
+                <label>Số điện thoại</label>
+                <input type="text" id="txtSDT" />
+                <div id="errSDT" class="error"></div>
+            </div>
+
+            <!-- Tỉnh -->
+            <div class="col">
+                <label>Tỉnh / thành phố</label>
+                <input type="text" id="txtTinh" />
+                <div id="errTinh" class="error"></div>
+            </div>
+        </div>
+
+        <!-- Quận -->
+        <div class="row">
+            <div class="col">
+                <label>Quận / Huyện</label>
+                <input type="text" id="txtQuan" />
+                <div id="errQuan" class="error"></div>
+            </div>
+
+            <div class="col"></div>
+        </div>
+
+        <!-- Phường -->
+        <div class="row">
+            <div class="col">
+                <label>Phường / Xã</label>
+                <input type="text" id="txtPhuong" />
+                <div id="errPhuong" class="error"></div>
+            </div>
+
+            <div class="col"></div>
+        </div>
+
+        <!-- Chọn địa chỉ thường dùng -->
+        <div class="delivery">
+            <b>Lựa chọn tên cho địa chỉ thường dùng</b>
+
+            <div class="buttons">
+                <button type="button" id="vanPhong">
+                    Văn phòng
+                </button>
+
+                <button type="button" id="nhaRieng">
+                    Nhà riêng
+                </button>
+            </div>
+
+            <div id="loaiDiaChi"></div>
+        </div>
+
+        <!-- Lưu -->
+        <div class="buttons">
+            <button type="button" id="luu">
+                Lưu
+            </button>
+        </div>
+
+    </div>
+
+    <script src="~/Scripts/BT2/BT2.js"></script>
+
+</body>
+</html>
+

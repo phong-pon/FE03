@@ -139,6 +139,11 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\BT1\BT1.js" />
+    <Content Include="Scripts\BT2\BT2.js" />
+    <Content Include="Scripts\BT3\BT3.js" />
+    <Content Include="Scripts\BT4\BT4.js" />
+    <Content Include="Scripts\BT5\BT5.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -169,6 +174,11 @@
     <Content Include="Views\lab03\VD3.cshtml" />
     <Content Include="Views\lab03\VD4.cshtml" />
     <Content Include="Views\lab03\VD5.cshtml" />
+    <Content Include="Views\lab03\BT1.cshtml" />
+    <Content Include="Views\lab03\BT2.cshtml" />
+    <Content Include="Views\lab03\BT3.cshtml" />
+    <Content Include="Views\lab03\BT4.cshtml" />
+    <Content Include="Views\lab03\BT5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

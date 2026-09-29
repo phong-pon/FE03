@@ -29,5 +29,25 @@ namespace FE03.Controllers
         {
             return View();
         }
+        public ActionResult BT1()
+        {
+            return View();
+        }
+        public ActionResult BT2()
+        {
+            return View();
+        }
+        public ActionResult BT3()
+        {
+            return View();
+        }
+        public ActionResult BT4()
+        {
+            return View();
+        }
+        public ActionResult BT5()
+        {
+            return View();
+        }
     }
 }
