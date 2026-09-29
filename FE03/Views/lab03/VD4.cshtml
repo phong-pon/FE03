@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "VD4";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD4</title>
+    <script language="javaScript" src="~/Scripts/myjs/VD4.js">
+    </script>
+</head>
+<body>
+        NHẬP SỐ LƯỢNG VÀ ĐƠN GIÁ
+    <form>
+        Đơn giá: <input type="number" id="dg" name="dongia" min="0" max="100"/><br />
+        Số lượng: <input type="number" id="sl" name="soluong"
+                         onkeyup="TinhTien();"
+                         onchange="TinhTien();"
+                         /><br />
+        Thành tiền: <input type="text" id="tt" name="thanhtien"/>
+    </form>
+</body>
+</html>
+
+
